@@ -14,7 +14,7 @@ public class EnemigoPersecucion : MonoBehaviour
 
     void Start()
     {
-        enemy = transform.parent.gameObject;      // el objeto raíz del enemigo
+        enemy = transform.parent.gameObject;      
         posicionInicio = enemy.transform.position;
         posicionFin = puntoFin.position;
     }

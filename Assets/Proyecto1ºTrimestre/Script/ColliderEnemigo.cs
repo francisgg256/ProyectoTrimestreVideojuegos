@@ -18,9 +18,7 @@ public class ColliderEnemigo : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player_idle"))
         {
-            Debug.Log("Toca Enemigo");
             GameObject.FindGameObjectWithTag("ControlJuego").GetComponent<ControlJuego>().QuitarVida();
         }
     }
 }
-

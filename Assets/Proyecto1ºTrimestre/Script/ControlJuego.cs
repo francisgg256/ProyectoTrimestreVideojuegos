@@ -21,23 +21,22 @@ public class ControlJuego : MonoBehaviour
     public AudioClip saltoSfx;
     public AudioClip vidaSfx;
     public AudioClip recolectarSfx;
-    private AudioSource audiosource;
     void Start()
     {
         puntuacion = 0;
         tiempoInicio = (int)Time.time;
-        tiempoNivel = 60;
+        tiempoNivel = 120;
         vulnerable = true;
         jugador = GameObject.FindGameObjectWithTag("Player").gameObject;
-        player_idle = jugador.transform.Find("player-idle-1").gameObject;
+        player_idle = jugador.transform.Find("player-idle").gameObject;
         sprite = player_idle.GetComponent<SpriteRenderer>();
-        audiosource = jugador.transform.Find("AudioSource").gameObject.GetComponent<AudioSource>();
         canvas = Canvas.FindFirstObjectByType<Canvas>();
         hud = canvas.GetComponent<ControlHUD>();
         hud.setPuntuacion(puntuacion);
         hud.setNumVidas(numVidas);
         hud.setTiemploEmpleado(tiempoEmpleado);
         controlDatosJuego = GameObject.Find("DatosJuego").GetComponent<ControlDatosJuego>();
+
     }
 
     // Update is called once per frame
@@ -49,7 +48,6 @@ public class ControlJuego : MonoBehaviour
         }
         //Actualizar tiempo empleado
         tiempoEmpleado = (int)(Time.time - tiempoInicio);
-        Debug.Log("Tiempo Empleado" + tiempoEmpleado);
         hud.setTiemploEmpleado(tiempoEmpleado);
         //Comprobar si hemos consumido tiempo nivel
         if (tiempoNivel - tiempoEmpleado < 0) FinJuego();
@@ -71,7 +69,6 @@ public class ControlJuego : MonoBehaviour
     {
         if (vulnerable)
         {
-            audiosource.PlayOneShot(vidaSfx);
             vulnerable = false;
             numVidas--;
             hud.setNumVidas(numVidas);

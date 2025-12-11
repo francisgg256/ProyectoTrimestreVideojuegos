@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 public class ControlBotones : MonoBehaviour
 {
     public void OnBotonJugar()
@@ -22,3 +23,4 @@ public class ControlBotones : MonoBehaviour
         SceneManager.LoadScene("Menu");
     }
 }
+

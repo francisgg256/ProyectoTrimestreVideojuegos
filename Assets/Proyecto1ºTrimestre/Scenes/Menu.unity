@@ -153,8 +153,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.0025482}
-  m_SizeDelta: {x: 978, y: 550}
+  m_AnchoredPosition: {x: 0, y: 0.00034904}
+  m_SizeDelta: {x: 1241, y: 510}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &183605525
 MonoBehaviour:
@@ -277,7 +277,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1873890317}
+      - m_Target: {fileID: 1873890322}
         m_TargetAssemblyTypeName: ControlBotones, Assembly-CSharp
         m_MethodName: OnBotonSalir
         m_Mode: 1
@@ -514,6 +514,7 @@ MonoBehaviour:
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -589,8 +590,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000030518, y: 0.00052261}
-  m_SizeDelta: {x: 978, y: 550}
+  m_AnchoredPosition: {x: -0.000030518, y: 0.00014782}
+  m_SizeDelta: {x: 1241, y: 510}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &590911091
 MonoBehaviour:
@@ -664,8 +665,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000030518, y: -0}
-  m_SizeDelta: {x: 978, y: 550}
+  m_AnchoredPosition: {x: 0, y: 0.00009346}
+  m_SizeDelta: {x: 1241, y: 510}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &763301554
 MonoBehaviour:
@@ -739,8 +740,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000030518, y: 0.0018044}
-  m_SizeDelta: {x: 978, y: 550}
+  m_AnchoredPosition: {x: 0, y: 0.00049114}
+  m_SizeDelta: {x: 1241, y: 510}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &801525082
 MonoBehaviour:
@@ -863,7 +864,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1873890317}
+      - m_Target: {fileID: 1873890322}
         m_TargetAssemblyTypeName: ControlBotones, Assembly-CSharp
         m_MethodName: OnBotonJugar
         m_Mode: 1
@@ -1008,6 +1009,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -1211,7 +1213,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1873890317}
+      - m_Target: {fileID: 1873890322}
         m_TargetAssemblyTypeName: ControlBotones, Assembly-CSharp
         m_MethodName: OnBotonCreditos
         m_Mode: 1
@@ -1273,7 +1275,7 @@ GameObject:
   - component: {fileID: 1873890320}
   - component: {fileID: 1873890319}
   - component: {fileID: 1873890318}
-  - component: {fileID: 1873890317}
+  - component: {fileID: 1873890322}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1281,18 +1283,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1873890317
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1873890316}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f882b1160a01f424faa534f256b72b44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ControlBotones
 --- !u!114 &1873890318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1384,6 +1374,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1873890322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873890316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f882b1160a01f424faa534f256b72b44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ControlBotones
 --- !u!1 &1908087662
 GameObject:
   m_ObjectHideFlags: 0
@@ -1418,8 +1420,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000030518, y: 0.001276}
-  m_SizeDelta: {x: 978, y: 550}
+  m_AnchoredPosition: {x: 0, y: 0.00015736}
+  m_SizeDelta: {x: 1241, y: 510}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1908087664
 MonoBehaviour:
@@ -1554,6 +1556,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -1690,6 +1693,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
